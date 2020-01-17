@@ -1,0 +1,553 @@
+\hypertarget{ei__draw__shape_8c}{\section{ei\-\_\-draw\-\_\-shape.\-c File Reference}
+\label{ei__draw__shape_8c}\index{ei\-\_\-draw\-\_\-shape.\-c@{ei\-\_\-draw\-\_\-shape.\-c}}
+}
+{\ttfamily \#include \char`\"{}ei\-\_\-draw\-\_\-shape.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}ei\-\_\-utils.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}ei\-\_\-types.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}ei\-\_\-draw.\-h\char`\"{}}\\*
+{\ttfamily \#include $<$math.\-h$>$}\\*
+{\ttfamily \#include $<$stdio.\-h$>$}\\*
+{\ttfamily \#include $<$stdlib.\-h$>$}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{ei__types_8h_a383b9af13bd6a0a893096ead3c4d8e28}{ei\-\_\-bool\-\_\-t} \hyperlink{ei__draw__shape_8c_a9de6e7172913735480607c7ca2eafd51}{do\-\_\-intersect} (\hyperlink{structei__rect__t}{ei\-\_\-rect\-\_\-t} rect1, \hyperlink{structei__rect__t}{ei\-\_\-rect\-\_\-t} rect2)
+\begin{DoxyCompactList}\small\item\em Returns whether two rectangles intersect. \end{DoxyCompactList}\item 
+\hyperlink{ei__types_8h_a383b9af13bd6a0a893096ead3c4d8e28}{ei\-\_\-bool\-\_\-t} \hyperlink{ei__draw__shape_8c_a5f740283576bf84fbcf3a32ea89bd5e5}{inside\-\_\-rect} (\hyperlink{structei__point__t}{ei\-\_\-point\-\_\-t} point, \hyperlink{structei__rect__t}{ei\-\_\-rect\-\_\-t} rect)
+\begin{DoxyCompactList}\small\item\em Returns whether a point is inside a given rectangle. \end{DoxyCompactList}\item 
+\hyperlink{structei__rect__t}{ei\-\_\-rect\-\_\-t} \hyperlink{ei__draw__shape_8c_a13464b62504af92a0025d3aab2adda58}{merge\-\_\-rect} (\hyperlink{structei__rect__t}{ei\-\_\-rect\-\_\-t} rect1, \hyperlink{structei__rect__t}{ei\-\_\-rect\-\_\-t} rect2)
+\begin{DoxyCompactList}\small\item\em Returns the outline of the smallest rectangle containing both parameters. \end{DoxyCompactList}\item 
+\hyperlink{structei__rect__t}{ei\-\_\-rect\-\_\-t} \hyperlink{ei__draw__shape_8c_a2324f945ec16fe9f6a55cd652f5b839e}{expand\-\_\-rect} (\hyperlink{structei__rect__t}{ei\-\_\-rect\-\_\-t} rect, int left, int up, int right, int down)
+\begin{DoxyCompactList}\small\item\em Returns a rectangle with a height increased by up + down and a width increased by left + right. \end{DoxyCompactList}\item 
+int \hyperlink{ei__draw__shape_8c_adf9553a19016fbe51446b3c4a590e6ab}{area\-\_\-rect} (\hyperlink{structei__rect__t}{ei\-\_\-rect\-\_\-t} rect)
+\begin{DoxyCompactList}\small\item\em Returns the area of a given rectangle. \end{DoxyCompactList}\item 
+\hyperlink{structei__rect__t}{ei\-\_\-rect\-\_\-t} \hyperlink{ei__draw__shape_8c_a53b2fcdef8530b3558660e35bce9b07d}{intersect\-\_\-rect} (\hyperlink{structei__rect__t}{ei\-\_\-rect\-\_\-t} rect1, \hyperlink{structei__rect__t}{ei\-\_\-rect\-\_\-t} rect2)
+\begin{DoxyCompactList}\small\item\em Returns the intersection rectangle of rect1 and rect2. \end{DoxyCompactList}\item 
+void \hyperlink{ei__draw__shape_8c_a0428777e728f1725854be7c6c65563b0}{print\-\_\-rect} (\hyperlink{structei__rect__t}{ei\-\_\-rect\-\_\-t} rect)
+\begin{DoxyCompactList}\small\item\em Prints a given rectangle. \end{DoxyCompactList}\item 
+void \hyperlink{ei__draw__shape_8c_a67527522e2412021239b4b9b8551328a}{print\-\_\-point} (\hyperlink{structei__point__t}{ei\-\_\-point\-\_\-t} point)
+\begin{DoxyCompactList}\small\item\em Prints a given point. \end{DoxyCompactList}\item 
+void \hyperlink{ei__draw__shape_8c_af7d6a53d6c9a5f25d50d84ba1a870370}{arc} (\hyperlink{structei__point__t}{ei\-\_\-point\-\_\-t} centre, int rayon, float debut, float fin, \hyperlink{structei__linked__point__t}{ei\-\_\-linked\-\_\-point\-\_\-t} $\ast$points, int res)
+\begin{DoxyCompactList}\small\item\em Transforms a given linked chain of points by changing some points to create a curve instead. \end{DoxyCompactList}\item 
+\hyperlink{structei__linked__point__t}{ei\-\_\-linked\-\_\-point\-\_\-t} $\ast$ \hyperlink{ei__draw__shape_8c_a927f62c721800b1c97a4b59ea5ff4eba}{rounded\-\_\-frame} (\hyperlink{structei__rect__t}{ei\-\_\-rect\-\_\-t} rect, int rayon, int h, int res, \hyperlink{ei__draw__shape_8h_a06c3cd3d361e66af1130ee4485983c19}{rounded\-\_\-t} type)
+\begin{DoxyCompactList}\small\item\em Calculates a linked chain of points to create a rounded\-\_\-frame. \end{DoxyCompactList}\item 
+void \hyperlink{ei__draw__shape_8c_a554f924e1fb9cc72ecf9b0ebc9eed486}{draw\-\_\-pixel\-\_\-opti} (uint32\-\_\-t $\ast$pixel\-\_\-ptr, int x, int y, int width, uint32\-\_\-t col)
+\begin{DoxyCompactList}\small\item\em Changes the color of a given pixel to a given color. \end{DoxyCompactList}\item 
+\hyperlink{ei__types_8h_a383b9af13bd6a0a893096ead3c4d8e28}{ei\-\_\-bool\-\_\-t} \hyperlink{ei__draw__shape_8c_a157659ccce61f5f8deb5402d774d9eda}{clip\-\_\-line} (\hyperlink{structei__point__t}{ei\-\_\-point\-\_\-t} p1, \hyperlink{structei__point__t}{ei\-\_\-point\-\_\-t} p2, \hyperlink{structei__point__t}{ei\-\_\-point\-\_\-t} $\ast$cp1, \hyperlink{structei__point__t}{ei\-\_\-point\-\_\-t} $\ast$cp2, const \hyperlink{structei__rect__t}{ei\-\_\-rect\-\_\-t} $\ast$clipper)
+\begin{DoxyCompactList}\small\item\em Returns a clipped line. \end{DoxyCompactList}\item 
+void \hyperlink{ei__draw__shape_8c_a25fb8f1b8a5a5f70b1dc28ec33c281a9}{draw\-\_\-line} (\hyperlink{hw__interface_8h_ad9970ae727c438faaf09c58c5defb796}{ei\-\_\-surface\-\_\-t} surface, \hyperlink{structei__point__t}{ei\-\_\-point\-\_\-t} p1, \hyperlink{structei__point__t}{ei\-\_\-point\-\_\-t} p2, const \hyperlink{structei__color__t}{ei\-\_\-color\-\_\-t} color, const \hyperlink{structei__rect__t}{ei\-\_\-rect\-\_\-t} $\ast$clipper)
+\begin{DoxyCompactList}\small\item\em Draws a clipped line going from p1 to p2 on a given surface in a given color. \end{DoxyCompactList}\item 
+void \hyperlink{ei__draw__shape_8c_a8ef4e8af9485e84cbce48d2ef1725cec}{ei\-\_\-draw\-\_\-polyline\-\_\-closed} (\hyperlink{hw__interface_8h_ad9970ae727c438faaf09c58c5defb796}{ei\-\_\-surface\-\_\-t} surface, const \hyperlink{structei__linked__point__t}{ei\-\_\-linked\-\_\-point\-\_\-t} $\ast$first\-\_\-point, const \hyperlink{structei__color__t}{ei\-\_\-color\-\_\-t} color, const \hyperlink{structei__rect__t}{ei\-\_\-rect\-\_\-t} $\ast$clipper)
+\begin{DoxyCompactList}\small\item\em Draws a broken line going through the given points. \end{DoxyCompactList}\item 
+void \hyperlink{ei__draw__shape_8c_a0e19a52a168f5bb48a6677497b371c8c}{free\-\_\-polygon} (\hyperlink{structei__linked__point__t}{ei\-\_\-linked\-\_\-point\-\_\-t} $\ast$poly)
+\begin{DoxyCompactList}\small\item\em Frees the memory. \end{DoxyCompactList}\item 
+\hyperlink{structei__linked__point__t}{ei\-\_\-linked\-\_\-point\-\_\-t} $\ast$ \hyperlink{ei__draw__shape_8c_ae6cf9156b818aaa882d8c3fc3939fb7a}{clip\-\_\-polygon} (const \hyperlink{structei__linked__point__t}{ei\-\_\-linked\-\_\-point\-\_\-t} $\ast$poly, const \hyperlink{structei__rect__t}{ei\-\_\-rect\-\_\-t} $\ast$clipper)
+\begin{DoxyCompactList}\small\item\em Returns a clipped polygon. \end{DoxyCompactList}\item 
+void \hyperlink{ei__draw__shape_8c_a1bdffc104f3a9617131cfedf4a5d7087}{sort} (struct \hyperlink{structside}{side} $\ast$sides)
+\begin{DoxyCompactList}\small\item\em Sorts the sides by intersection of the side with the scanline. \end{DoxyCompactList}\item 
+void \hyperlink{ei__draw__shape_8c_ad42cf66ad28d38549a9ffe61c5da3cae}{ei\-\_\-draw\-\_\-polygon\-\_\-opti} (\hyperlink{hw__interface_8h_ad9970ae727c438faaf09c58c5defb796}{ei\-\_\-surface\-\_\-t} surface1, \hyperlink{hw__interface_8h_ad9970ae727c438faaf09c58c5defb796}{ei\-\_\-surface\-\_\-t} surface2, const \hyperlink{structei__linked__point__t}{ei\-\_\-linked\-\_\-point\-\_\-t} $\ast$first\-\_\-point, const \hyperlink{structei__color__t}{ei\-\_\-color\-\_\-t} color1, const \hyperlink{structei__color__t}{ei\-\_\-color\-\_\-t} color2, const \hyperlink{structei__rect__t}{ei\-\_\-rect\-\_\-t} $\ast$clipper)
+\begin{DoxyCompactList}\small\item\em Draws a polygon. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{ei__draw__shape_8c_af7d6a53d6c9a5f25d50d84ba1a870370}{\index{ei\-\_\-draw\-\_\-shape.\-c@{ei\-\_\-draw\-\_\-shape.\-c}!arc@{arc}}
+\index{arc@{arc}!ei_draw_shape.c@{ei\-\_\-draw\-\_\-shape.\-c}}
+\subsubsection[{arc}]{\setlength{\rightskip}{0pt plus 5cm}void arc (
+\begin{DoxyParamCaption}
+\item[{{\bf ei\-\_\-point\-\_\-t}}]{centre, }
+\item[{int}]{rayon, }
+\item[{float}]{debut, }
+\item[{float}]{fin, }
+\item[{{\bf ei\-\_\-linked\-\_\-point\-\_\-t} $\ast$}]{points, }
+\item[{int}]{res}
+\end{DoxyParamCaption}
+)}}\label{ei__draw__shape_8c_af7d6a53d6c9a5f25d50d84ba1a870370}
+
+
+Transforms a given linked chain of points by changing some points to create a curve instead. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em centre} & Center of the curve. \\
+\hline
+{\em rayon} & Radius of the circle used to make the curve. \\
+\hline
+{\em debut} & Used to create a step and an angle. \\
+\hline
+{\em fin} & Used to create a step. \\
+\hline
+{\em points} & The linked chain to modify. \\
+\hline
+{\em res} & The number of points to change. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 92 of file ei\-\_\-draw\-\_\-shape.\-c.
+
+\hypertarget{ei__draw__shape_8c_adf9553a19016fbe51446b3c4a590e6ab}{\index{ei\-\_\-draw\-\_\-shape.\-c@{ei\-\_\-draw\-\_\-shape.\-c}!area\-\_\-rect@{area\-\_\-rect}}
+\index{area\-\_\-rect@{area\-\_\-rect}!ei_draw_shape.c@{ei\-\_\-draw\-\_\-shape.\-c}}
+\subsubsection[{area\-\_\-rect}]{\setlength{\rightskip}{0pt plus 5cm}int area\-\_\-rect (
+\begin{DoxyParamCaption}
+\item[{{\bf ei\-\_\-rect\-\_\-t}}]{rect}
+\end{DoxyParamCaption}
+)}}\label{ei__draw__shape_8c_adf9553a19016fbe51446b3c4a590e6ab}
+
+
+Returns the area of a given rectangle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rect} & Rectangle of type \hyperlink{structei__rect__t}{ei\-\_\-rect\-\_\-t}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The area in pixels squared. 
+\end{DoxyReturn}
+
+
+Definition at line 54 of file ei\-\_\-draw\-\_\-shape.\-c.
+
+\hypertarget{ei__draw__shape_8c_a157659ccce61f5f8deb5402d774d9eda}{\index{ei\-\_\-draw\-\_\-shape.\-c@{ei\-\_\-draw\-\_\-shape.\-c}!clip\-\_\-line@{clip\-\_\-line}}
+\index{clip\-\_\-line@{clip\-\_\-line}!ei_draw_shape.c@{ei\-\_\-draw\-\_\-shape.\-c}}
+\subsubsection[{clip\-\_\-line}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ei\-\_\-bool\-\_\-t} clip\-\_\-line (
+\begin{DoxyParamCaption}
+\item[{{\bf ei\-\_\-point\-\_\-t}}]{p1, }
+\item[{{\bf ei\-\_\-point\-\_\-t}}]{p2, }
+\item[{{\bf ei\-\_\-point\-\_\-t} $\ast$}]{cp1, }
+\item[{{\bf ei\-\_\-point\-\_\-t} $\ast$}]{cp2, }
+\item[{const {\bf ei\-\_\-rect\-\_\-t} $\ast$}]{clipper}
+\end{DoxyParamCaption}
+)}}\label{ei__draw__shape_8c_a157659ccce61f5f8deb5402d774d9eda}
+
+
+Returns a clipped line. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p1} & First end of the line to clip. \\
+\hline
+{\em p2} & Second end of the line to clip. \\
+\hline
+{\em cp1} & A point which is modified by the function (new point). \\
+\hline
+{\em cp2} & A point which is modified by the function (new point). \\
+\hline
+{\em clipper} & Pointer on the rectangle used for the clipping.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the line and the clipper intersect and if no error has occured. 
+\end{DoxyReturn}
+
+
+Definition at line 213 of file ei\-\_\-draw\-\_\-shape.\-c.
+
+\hypertarget{ei__draw__shape_8c_ae6cf9156b818aaa882d8c3fc3939fb7a}{\index{ei\-\_\-draw\-\_\-shape.\-c@{ei\-\_\-draw\-\_\-shape.\-c}!clip\-\_\-polygon@{clip\-\_\-polygon}}
+\index{clip\-\_\-polygon@{clip\-\_\-polygon}!ei_draw_shape.c@{ei\-\_\-draw\-\_\-shape.\-c}}
+\subsubsection[{clip\-\_\-polygon}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ei\-\_\-linked\-\_\-point\-\_\-t}$\ast$ clip\-\_\-polygon (
+\begin{DoxyParamCaption}
+\item[{const {\bf ei\-\_\-linked\-\_\-point\-\_\-t} $\ast$}]{poly, }
+\item[{const {\bf ei\-\_\-rect\-\_\-t} $\ast$}]{clipper}
+\end{DoxyParamCaption}
+)}}\label{ei__draw__shape_8c_ae6cf9156b818aaa882d8c3fc3939fb7a}
+
+
+Returns a clipped polygon. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em poly} & The polygon to clip. \\
+\hline
+{\em clipper} & A pointer on the clipping rectangle.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A linked chain of points representing the intersection of poly and clipper when they are connected. 
+\end{DoxyReturn}
+
+
+Definition at line 335 of file ei\-\_\-draw\-\_\-shape.\-c.
+
+\hypertarget{ei__draw__shape_8c_a9de6e7172913735480607c7ca2eafd51}{\index{ei\-\_\-draw\-\_\-shape.\-c@{ei\-\_\-draw\-\_\-shape.\-c}!do\-\_\-intersect@{do\-\_\-intersect}}
+\index{do\-\_\-intersect@{do\-\_\-intersect}!ei_draw_shape.c@{ei\-\_\-draw\-\_\-shape.\-c}}
+\subsubsection[{do\-\_\-intersect}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ei\-\_\-bool\-\_\-t} do\-\_\-intersect (
+\begin{DoxyParamCaption}
+\item[{{\bf ei\-\_\-rect\-\_\-t}}]{rect1, }
+\item[{{\bf ei\-\_\-rect\-\_\-t}}]{rect2}
+\end{DoxyParamCaption}
+)}}\label{ei__draw__shape_8c_a9de6e7172913735480607c7ca2eafd51}
+
+
+Returns whether two rectangles intersect. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rect1} & Rectangle of type \hyperlink{structei__rect__t}{ei\-\_\-rect\-\_\-t}. \\
+\hline
+{\em rect2} & Rectangle of type \hyperlink{structei__rect__t}{ei\-\_\-rect\-\_\-t}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if there is an intersection. 
+\end{DoxyReturn}
+
+
+Definition at line 10 of file ei\-\_\-draw\-\_\-shape.\-c.
+
+\hypertarget{ei__draw__shape_8c_a25fb8f1b8a5a5f70b1dc28ec33c281a9}{\index{ei\-\_\-draw\-\_\-shape.\-c@{ei\-\_\-draw\-\_\-shape.\-c}!draw\-\_\-line@{draw\-\_\-line}}
+\index{draw\-\_\-line@{draw\-\_\-line}!ei_draw_shape.c@{ei\-\_\-draw\-\_\-shape.\-c}}
+\subsubsection[{draw\-\_\-line}]{\setlength{\rightskip}{0pt plus 5cm}void draw\-\_\-line (
+\begin{DoxyParamCaption}
+\item[{{\bf ei\-\_\-surface\-\_\-t}}]{surface, }
+\item[{{\bf ei\-\_\-point\-\_\-t}}]{p1, }
+\item[{{\bf ei\-\_\-point\-\_\-t}}]{p2, }
+\item[{const {\bf ei\-\_\-color\-\_\-t}}]{color, }
+\item[{const {\bf ei\-\_\-rect\-\_\-t} $\ast$}]{clipper}
+\end{DoxyParamCaption}
+)}}\label{ei__draw__shape_8c_a25fb8f1b8a5a5f70b1dc28ec33c281a9}
+
+
+Draws a clipped line going from p1 to p2 on a given surface in a given color. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em surface} & Surface on which to draw the line. \\
+\hline
+{\em p1} & First end of the line to draw. \\
+\hline
+{\em p2} & Second end of the line to draw. \\
+\hline
+{\em color} & Color of the line to draw. \\
+\hline
+{\em clipper} & A pointer on the clipping rectangle. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 270 of file ei\-\_\-draw\-\_\-shape.\-c.
+
+\hypertarget{ei__draw__shape_8c_a554f924e1fb9cc72ecf9b0ebc9eed486}{\index{ei\-\_\-draw\-\_\-shape.\-c@{ei\-\_\-draw\-\_\-shape.\-c}!draw\-\_\-pixel\-\_\-opti@{draw\-\_\-pixel\-\_\-opti}}
+\index{draw\-\_\-pixel\-\_\-opti@{draw\-\_\-pixel\-\_\-opti}!ei_draw_shape.c@{ei\-\_\-draw\-\_\-shape.\-c}}
+\subsubsection[{draw\-\_\-pixel\-\_\-opti}]{\setlength{\rightskip}{0pt plus 5cm}void draw\-\_\-pixel\-\_\-opti (
+\begin{DoxyParamCaption}
+\item[{uint32\-\_\-t $\ast$}]{pixel\-\_\-ptr, }
+\item[{int}]{x, }
+\item[{int}]{y, }
+\item[{int}]{width, }
+\item[{uint32\-\_\-t}]{col}
+\end{DoxyParamCaption}
+)}}\label{ei__draw__shape_8c_a554f924e1fb9cc72ecf9b0ebc9eed486}
+
+
+Changes the color of a given pixel to a given color. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pixel\-\_\-ptr} & Pointer on the origin considered. \\
+\hline
+{\em x} & Abscissa relative to the origin considered. \\
+\hline
+{\em y} & Ordinate relative to the origin considered. \\
+\hline
+{\em width} & Width of the area considered. \\
+\hline
+{\em col} & New color. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 207 of file ei\-\_\-draw\-\_\-shape.\-c.
+
+\hypertarget{ei__draw__shape_8c_ad42cf66ad28d38549a9ffe61c5da3cae}{\index{ei\-\_\-draw\-\_\-shape.\-c@{ei\-\_\-draw\-\_\-shape.\-c}!ei\-\_\-draw\-\_\-polygon\-\_\-opti@{ei\-\_\-draw\-\_\-polygon\-\_\-opti}}
+\index{ei\-\_\-draw\-\_\-polygon\-\_\-opti@{ei\-\_\-draw\-\_\-polygon\-\_\-opti}!ei_draw_shape.c@{ei\-\_\-draw\-\_\-shape.\-c}}
+\subsubsection[{ei\-\_\-draw\-\_\-polygon\-\_\-opti}]{\setlength{\rightskip}{0pt plus 5cm}void ei\-\_\-draw\-\_\-polygon\-\_\-opti (
+\begin{DoxyParamCaption}
+\item[{{\bf ei\-\_\-surface\-\_\-t}}]{surface1, }
+\item[{{\bf ei\-\_\-surface\-\_\-t}}]{surface2, }
+\item[{const {\bf ei\-\_\-linked\-\_\-point\-\_\-t} $\ast$}]{first\-\_\-point, }
+\item[{const {\bf ei\-\_\-color\-\_\-t}}]{color1, }
+\item[{const {\bf ei\-\_\-color\-\_\-t}}]{color2, }
+\item[{const {\bf ei\-\_\-rect\-\_\-t} $\ast$}]{clipper}
+\end{DoxyParamCaption}
+)}}\label{ei__draw__shape_8c_ad42cf66ad28d38549a9ffe61c5da3cae}
+
+
+Draws a polygon. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em surface1} & Drawing surface. \\
+\hline
+{\em surface2} & Picking surface. \\
+\hline
+{\em first\-\_\-point} & First point of the linked chain representing the polygon to draw. \\
+\hline
+{\em color1} & Color of the drawing surface. \\
+\hline
+{\em color2} & Color of the picking surface. \\
+\hline
+{\em clipper} & A pointer on the clipping rectangle. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 448 of file ei\-\_\-draw\-\_\-shape.\-c.
+
+\hypertarget{ei__draw__shape_8c_a8ef4e8af9485e84cbce48d2ef1725cec}{\index{ei\-\_\-draw\-\_\-shape.\-c@{ei\-\_\-draw\-\_\-shape.\-c}!ei\-\_\-draw\-\_\-polyline\-\_\-closed@{ei\-\_\-draw\-\_\-polyline\-\_\-closed}}
+\index{ei\-\_\-draw\-\_\-polyline\-\_\-closed@{ei\-\_\-draw\-\_\-polyline\-\_\-closed}!ei_draw_shape.c@{ei\-\_\-draw\-\_\-shape.\-c}}
+\subsubsection[{ei\-\_\-draw\-\_\-polyline\-\_\-closed}]{\setlength{\rightskip}{0pt plus 5cm}void ei\-\_\-draw\-\_\-polyline\-\_\-closed (
+\begin{DoxyParamCaption}
+\item[{{\bf ei\-\_\-surface\-\_\-t}}]{surface, }
+\item[{const {\bf ei\-\_\-linked\-\_\-point\-\_\-t} $\ast$}]{first\-\_\-point, }
+\item[{const {\bf ei\-\_\-color\-\_\-t}}]{color, }
+\item[{const {\bf ei\-\_\-rect\-\_\-t} $\ast$}]{clipper}
+\end{DoxyParamCaption}
+)}}\label{ei__draw__shape_8c_a8ef4e8af9485e84cbce48d2ef1725cec}
+
+
+Draws a broken line going through the given points. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em surface} & Surface on which to draw the line. \\
+\hline
+{\em first\-\_\-point} & First point of the linked chain of the points to draw. \\
+\hline
+{\em color} & Color of the line to draw. \\
+\hline
+{\em clipper} & A pointer on the clipping rectangle. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 306 of file ei\-\_\-draw\-\_\-shape.\-c.
+
+\hypertarget{ei__draw__shape_8c_a2324f945ec16fe9f6a55cd652f5b839e}{\index{ei\-\_\-draw\-\_\-shape.\-c@{ei\-\_\-draw\-\_\-shape.\-c}!expand\-\_\-rect@{expand\-\_\-rect}}
+\index{expand\-\_\-rect@{expand\-\_\-rect}!ei_draw_shape.c@{ei\-\_\-draw\-\_\-shape.\-c}}
+\subsubsection[{expand\-\_\-rect}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ei\-\_\-rect\-\_\-t} expand\-\_\-rect (
+\begin{DoxyParamCaption}
+\item[{{\bf ei\-\_\-rect\-\_\-t}}]{rect, }
+\item[{int}]{up, }
+\item[{int}]{right, }
+\item[{int}]{down, }
+\item[{int}]{left}
+\end{DoxyParamCaption}
+)}}\label{ei__draw__shape_8c_a2324f945ec16fe9f6a55cd652f5b839e}
+
+
+Returns a rectangle with a height increased by up + down and a width increased by left + right. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rect} & Rectangle of type \hyperlink{structei__rect__t}{ei\-\_\-rect\-\_\-t}. \\
+\hline
+{\em up} & How much the top of the rectangle has to be moved. \\
+\hline
+{\em right} & How much the right side of the rectangle has to be moved. \\
+\hline
+{\em down} & How much the bottom of the rectangle has to be moved. \\
+\hline
+{\em left} & How much the left side of the rectangle has to be moved.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The expanded rectangle. 
+\end{DoxyReturn}
+
+
+Definition at line 48 of file ei\-\_\-draw\-\_\-shape.\-c.
+
+\hypertarget{ei__draw__shape_8c_a0e19a52a168f5bb48a6677497b371c8c}{\index{ei\-\_\-draw\-\_\-shape.\-c@{ei\-\_\-draw\-\_\-shape.\-c}!free\-\_\-polygon@{free\-\_\-polygon}}
+\index{free\-\_\-polygon@{free\-\_\-polygon}!ei_draw_shape.c@{ei\-\_\-draw\-\_\-shape.\-c}}
+\subsubsection[{free\-\_\-polygon}]{\setlength{\rightskip}{0pt plus 5cm}void free\-\_\-polygon (
+\begin{DoxyParamCaption}
+\item[{{\bf ei\-\_\-linked\-\_\-point\-\_\-t} $\ast$}]{poly}
+\end{DoxyParamCaption}
+)}}\label{ei__draw__shape_8c_a0e19a52a168f5bb48a6677497b371c8c}
+
+
+Frees the memory. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em poly} & The polygon to free. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 326 of file ei\-\_\-draw\-\_\-shape.\-c.
+
+\hypertarget{ei__draw__shape_8c_a5f740283576bf84fbcf3a32ea89bd5e5}{\index{ei\-\_\-draw\-\_\-shape.\-c@{ei\-\_\-draw\-\_\-shape.\-c}!inside\-\_\-rect@{inside\-\_\-rect}}
+\index{inside\-\_\-rect@{inside\-\_\-rect}!ei_draw_shape.c@{ei\-\_\-draw\-\_\-shape.\-c}}
+\subsubsection[{inside\-\_\-rect}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ei\-\_\-bool\-\_\-t} inside\-\_\-rect (
+\begin{DoxyParamCaption}
+\item[{{\bf ei\-\_\-point\-\_\-t}}]{point, }
+\item[{{\bf ei\-\_\-rect\-\_\-t}}]{rect}
+\end{DoxyParamCaption}
+)}}\label{ei__draw__shape_8c_a5f740283576bf84fbcf3a32ea89bd5e5}
+
+
+Returns whether a point is inside a given rectangle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em point} & Point of type \hyperlink{structei__point__t}{ei\-\_\-point\-\_\-t}. \\
+\hline
+{\em rect} & Rectangle of type \hyperlink{structei__rect__t}{ei\-\_\-rect\-\_\-t}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the point is inside the rectangle. 
+\end{DoxyReturn}
+
+
+Definition at line 18 of file ei\-\_\-draw\-\_\-shape.\-c.
+
+\hypertarget{ei__draw__shape_8c_a53b2fcdef8530b3558660e35bce9b07d}{\index{ei\-\_\-draw\-\_\-shape.\-c@{ei\-\_\-draw\-\_\-shape.\-c}!intersect\-\_\-rect@{intersect\-\_\-rect}}
+\index{intersect\-\_\-rect@{intersect\-\_\-rect}!ei_draw_shape.c@{ei\-\_\-draw\-\_\-shape.\-c}}
+\subsubsection[{intersect\-\_\-rect}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ei\-\_\-rect\-\_\-t} intersect\-\_\-rect (
+\begin{DoxyParamCaption}
+\item[{{\bf ei\-\_\-rect\-\_\-t}}]{rect1, }
+\item[{{\bf ei\-\_\-rect\-\_\-t}}]{rect2}
+\end{DoxyParamCaption}
+)}}\label{ei__draw__shape_8c_a53b2fcdef8530b3558660e35bce9b07d}
+
+
+Returns the intersection rectangle of rect1 and rect2. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rect1} & Rectangle of type \hyperlink{structei__rect__t}{ei\-\_\-rect\-\_\-t}. \\
+\hline
+{\em rect2} & Rectangle of type \hyperlink{structei__rect__t}{ei\-\_\-rect\-\_\-t}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A rectangle. 
+\end{DoxyReturn}
+
+
+Definition at line 60 of file ei\-\_\-draw\-\_\-shape.\-c.
+
+\hypertarget{ei__draw__shape_8c_a13464b62504af92a0025d3aab2adda58}{\index{ei\-\_\-draw\-\_\-shape.\-c@{ei\-\_\-draw\-\_\-shape.\-c}!merge\-\_\-rect@{merge\-\_\-rect}}
+\index{merge\-\_\-rect@{merge\-\_\-rect}!ei_draw_shape.c@{ei\-\_\-draw\-\_\-shape.\-c}}
+\subsubsection[{merge\-\_\-rect}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ei\-\_\-rect\-\_\-t} merge\-\_\-rect (
+\begin{DoxyParamCaption}
+\item[{{\bf ei\-\_\-rect\-\_\-t}}]{rect1, }
+\item[{{\bf ei\-\_\-rect\-\_\-t}}]{rect2}
+\end{DoxyParamCaption}
+)}}\label{ei__draw__shape_8c_a13464b62504af92a0025d3aab2adda58}
+
+
+Returns the outline of the smallest rectangle containing both parameters. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rect1} & Rectangle of type \hyperlink{structei__rect__t}{ei\-\_\-rect\-\_\-t}. \\
+\hline
+{\em rect2} & Rectangle of type \hyperlink{structei__rect__t}{ei\-\_\-rect\-\_\-t}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A new rectangle. 
+\end{DoxyReturn}
+
+
+Definition at line 26 of file ei\-\_\-draw\-\_\-shape.\-c.
+
+\hypertarget{ei__draw__shape_8c_a67527522e2412021239b4b9b8551328a}{\index{ei\-\_\-draw\-\_\-shape.\-c@{ei\-\_\-draw\-\_\-shape.\-c}!print\-\_\-point@{print\-\_\-point}}
+\index{print\-\_\-point@{print\-\_\-point}!ei_draw_shape.c@{ei\-\_\-draw\-\_\-shape.\-c}}
+\subsubsection[{print\-\_\-point}]{\setlength{\rightskip}{0pt plus 5cm}void print\-\_\-point (
+\begin{DoxyParamCaption}
+\item[{{\bf ei\-\_\-point\-\_\-t}}]{point}
+\end{DoxyParamCaption}
+)}}\label{ei__draw__shape_8c_a67527522e2412021239b4b9b8551328a}
+
+
+Prints a given point. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em point} & Point of type \hyperlink{structei__point__t}{ei\-\_\-point\-\_\-t}. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 87 of file ei\-\_\-draw\-\_\-shape.\-c.
+
+\hypertarget{ei__draw__shape_8c_a0428777e728f1725854be7c6c65563b0}{\index{ei\-\_\-draw\-\_\-shape.\-c@{ei\-\_\-draw\-\_\-shape.\-c}!print\-\_\-rect@{print\-\_\-rect}}
+\index{print\-\_\-rect@{print\-\_\-rect}!ei_draw_shape.c@{ei\-\_\-draw\-\_\-shape.\-c}}
+\subsubsection[{print\-\_\-rect}]{\setlength{\rightskip}{0pt plus 5cm}void print\-\_\-rect (
+\begin{DoxyParamCaption}
+\item[{{\bf ei\-\_\-rect\-\_\-t}}]{rect}
+\end{DoxyParamCaption}
+)}}\label{ei__draw__shape_8c_a0428777e728f1725854be7c6c65563b0}
+
+
+Prints a given rectangle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rect} & Rectangle of type \hyperlink{structei__rect__t}{ei\-\_\-rect\-\_\-t}. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 82 of file ei\-\_\-draw\-\_\-shape.\-c.
+
+\hypertarget{ei__draw__shape_8c_a927f62c721800b1c97a4b59ea5ff4eba}{\index{ei\-\_\-draw\-\_\-shape.\-c@{ei\-\_\-draw\-\_\-shape.\-c}!rounded\-\_\-frame@{rounded\-\_\-frame}}
+\index{rounded\-\_\-frame@{rounded\-\_\-frame}!ei_draw_shape.c@{ei\-\_\-draw\-\_\-shape.\-c}}
+\subsubsection[{rounded\-\_\-frame}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ei\-\_\-linked\-\_\-point\-\_\-t}$\ast$ rounded\-\_\-frame (
+\begin{DoxyParamCaption}
+\item[{{\bf ei\-\_\-rect\-\_\-t}}]{rect, }
+\item[{int}]{rayon, }
+\item[{int}]{h, }
+\item[{int}]{res, }
+\item[{{\bf rounded\-\_\-t}}]{type}
+\end{DoxyParamCaption}
+)}}\label{ei__draw__shape_8c_a927f62c721800b1c97a4b59ea5ff4eba}
+
+
+Calculates a linked chain of points to create a rounded\-\_\-frame. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rect} & Used to create a rounded\-\_\-frame of the same dimensions, at the same origin. \\
+\hline
+{\em rayon} & The radius of the circle used to create the curve. \\
+\hline
+{\em h} & Half of the height of the rectangle. \\
+\hline
+{\em res} & Number of interpolations to make the curve. \\
+\hline
+{\em type} & The part of a rounded\-\_\-frame to be drawn.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A linked chain of points which represent a rounded frame when they are connected. 
+\end{DoxyReturn}
+
+
+Definition at line 107 of file ei\-\_\-draw\-\_\-shape.\-c.
+
+\hypertarget{ei__draw__shape_8c_a1bdffc104f3a9617131cfedf4a5d7087}{\index{ei\-\_\-draw\-\_\-shape.\-c@{ei\-\_\-draw\-\_\-shape.\-c}!sort@{sort}}
+\index{sort@{sort}!ei_draw_shape.c@{ei\-\_\-draw\-\_\-shape.\-c}}
+\subsubsection[{sort}]{\setlength{\rightskip}{0pt plus 5cm}void sort (
+\begin{DoxyParamCaption}
+\item[{struct {\bf side} $\ast$}]{sides}
+\end{DoxyParamCaption}
+)}}\label{ei__draw__shape_8c_a1bdffc104f3a9617131cfedf4a5d7087}
+
+
+Sorts the sides by intersection of the side with the scanline. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sides} & Linked chain of sides to sort. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 419 of file ei\-\_\-draw\-\_\-shape.\-c.
+

@@ -1,0 +1,162 @@
+\hypertarget{ei__widget__frame_8h}{\section{ei\-\_\-widget\-\_\-frame.\-h File Reference}
+\label{ei__widget__frame_8h}\index{ei\-\_\-widget\-\_\-frame.\-h@{ei\-\_\-widget\-\_\-frame.\-h}}
+}
+
+
+Functions to draw frames.  
+
+
+{\ttfamily \#include \char`\"{}ei\-\_\-widget.\-h\char`\"{}}\\*
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structei__widget__frame__t}{ei\-\_\-widget\-\_\-frame\-\_\-t}
+\begin{DoxyCompactList}\small\item\em Structure of a frame widget. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{structei__widget__frame__t}{ei\-\_\-widget\-\_\-frame\-\_\-t} \hyperlink{ei__widget__frame_8h_aea2ec95d5085d863608506fbc450cf66}{ei\-\_\-widget\-\_\-frame\-\_\-t}
+\begin{DoxyCompactList}\small\item\em Structure of a frame widget. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void $\ast$ \hyperlink{ei__widget__frame_8h_a464922d05d27b6bef94fa35fa498e322}{frame\-\_\-allocfunc} ()
+\begin{DoxyCompactList}\small\item\em Memory allocation function. \end{DoxyCompactList}\item 
+void \hyperlink{ei__widget__frame_8h_aad1aa6cbab19cc599e1fbff591a60072}{frame\-\_\-releasefunc} (struct \hyperlink{structei__widget__t}{ei\-\_\-widget\-\_\-t} $\ast$widget)
+\begin{DoxyCompactList}\small\item\em Releases the memory. \end{DoxyCompactList}\item 
+void \hyperlink{ei__widget__frame_8h_aa58c8cf90ed929b5318e849304993e7b}{frame\-\_\-drawfunc} (\hyperlink{structei__widget__t}{ei\-\_\-widget\-\_\-t} $\ast$widget, \hyperlink{hw__interface_8h_ad9970ae727c438faaf09c58c5defb796}{ei\-\_\-surface\-\_\-t} surface, \hyperlink{hw__interface_8h_ad9970ae727c438faaf09c58c5defb796}{ei\-\_\-surface\-\_\-t} \hyperlink{ei__application_8c_a356ef193ea6e596167a1c1f7dd712a48}{pick\-\_\-surface}, \hyperlink{structei__rect__t}{ei\-\_\-rect\-\_\-t} $\ast$clipper)
+\begin{DoxyCompactList}\small\item\em Draws a frame on a given surface. \end{DoxyCompactList}\item 
+void \hyperlink{ei__widget__frame_8h_ac21be8c3879589e0e655ca2c4c834995}{frame\-\_\-setdefaultsfunc} (struct \hyperlink{structei__widget__t}{ei\-\_\-widget\-\_\-t} $\ast$widget)
+\begin{DoxyCompactList}\small\item\em Sets the default values of a frame. \end{DoxyCompactList}\item 
+void \hyperlink{ei__widget__frame_8h_abe0d473c5e87b0d5c75a5012c3ac3dd2}{frame\-\_\-geomnotifyfunc} (struct \hyperlink{structei__widget__t}{ei\-\_\-widget\-\_\-t} $\ast$widget, \hyperlink{structei__rect__t}{ei\-\_\-rect\-\_\-t} rect)
+\begin{DoxyCompactList}\small\item\em Defines the behavior of a button. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Functions to draw frames. 
+
+Definition in file \hyperlink{ei__widget__frame_8h_source}{ei\-\_\-widget\-\_\-frame.\-h}.
+
+
+
+\subsection{Typedef Documentation}
+\hypertarget{ei__widget__frame_8h_aea2ec95d5085d863608506fbc450cf66}{\index{ei\-\_\-widget\-\_\-frame.\-h@{ei\-\_\-widget\-\_\-frame.\-h}!ei\-\_\-widget\-\_\-frame\-\_\-t@{ei\-\_\-widget\-\_\-frame\-\_\-t}}
+\index{ei\-\_\-widget\-\_\-frame\-\_\-t@{ei\-\_\-widget\-\_\-frame\-\_\-t}!ei_widget_frame.h@{ei\-\_\-widget\-\_\-frame.\-h}}
+\subsubsection[{ei\-\_\-widget\-\_\-frame\-\_\-t}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf ei\-\_\-widget\-\_\-frame\-\_\-t}  {\bf ei\-\_\-widget\-\_\-frame\-\_\-t}}}\label{ei__widget__frame_8h_aea2ec95d5085d863608506fbc450cf66}
+
+
+Structure of a frame widget. 
+
+
+
+\subsection{Function Documentation}
+\hypertarget{ei__widget__frame_8h_a464922d05d27b6bef94fa35fa498e322}{\index{ei\-\_\-widget\-\_\-frame.\-h@{ei\-\_\-widget\-\_\-frame.\-h}!frame\-\_\-allocfunc@{frame\-\_\-allocfunc}}
+\index{frame\-\_\-allocfunc@{frame\-\_\-allocfunc}!ei_widget_frame.h@{ei\-\_\-widget\-\_\-frame.\-h}}
+\subsubsection[{frame\-\_\-allocfunc}]{\setlength{\rightskip}{0pt plus 5cm}void$\ast$ frame\-\_\-allocfunc (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{ei__widget__frame_8h_a464922d05d27b6bef94fa35fa498e322}
+
+
+Memory allocation function. 
+
+
+
+Definition at line 9 of file ei\-\_\-widget\-\_\-frame.\-c.
+
+\hypertarget{ei__widget__frame_8h_aa58c8cf90ed929b5318e849304993e7b}{\index{ei\-\_\-widget\-\_\-frame.\-h@{ei\-\_\-widget\-\_\-frame.\-h}!frame\-\_\-drawfunc@{frame\-\_\-drawfunc}}
+\index{frame\-\_\-drawfunc@{frame\-\_\-drawfunc}!ei_widget_frame.h@{ei\-\_\-widget\-\_\-frame.\-h}}
+\subsubsection[{frame\-\_\-drawfunc}]{\setlength{\rightskip}{0pt plus 5cm}void frame\-\_\-drawfunc (
+\begin{DoxyParamCaption}
+\item[{{\bf ei\-\_\-widget\-\_\-t} $\ast$}]{widget, }
+\item[{{\bf ei\-\_\-surface\-\_\-t}}]{surface, }
+\item[{{\bf ei\-\_\-surface\-\_\-t}}]{pick\-\_\-surface, }
+\item[{{\bf ei\-\_\-rect\-\_\-t} $\ast$}]{clipper}
+\end{DoxyParamCaption}
+)}}\label{ei__widget__frame_8h_aa58c8cf90ed929b5318e849304993e7b}
+
+
+Draws a frame on a given surface. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em widget} & The widget to draw. \\
+\hline
+{\em surface} & The surface on which to draw the frame. \\
+\hline
+{\em pick\-\_\-surface} & The picking surface associated. \\
+\hline
+{\em clipper} & A pointer on the clipping rectangle. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 25 of file ei\-\_\-widget\-\_\-frame.\-c.
+
+\hypertarget{ei__widget__frame_8h_abe0d473c5e87b0d5c75a5012c3ac3dd2}{\index{ei\-\_\-widget\-\_\-frame.\-h@{ei\-\_\-widget\-\_\-frame.\-h}!frame\-\_\-geomnotifyfunc@{frame\-\_\-geomnotifyfunc}}
+\index{frame\-\_\-geomnotifyfunc@{frame\-\_\-geomnotifyfunc}!ei_widget_frame.h@{ei\-\_\-widget\-\_\-frame.\-h}}
+\subsubsection[{frame\-\_\-geomnotifyfunc}]{\setlength{\rightskip}{0pt plus 5cm}void frame\-\_\-geomnotifyfunc (
+\begin{DoxyParamCaption}
+\item[{struct {\bf ei\-\_\-widget\-\_\-t} $\ast$}]{widget, }
+\item[{{\bf ei\-\_\-rect\-\_\-t}}]{rect}
+\end{DoxyParamCaption}
+)}}\label{ei__widget__frame_8h_abe0d473c5e87b0d5c75a5012c3ac3dd2}
+
+
+Defines the behavior of a button. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em widget} & The button to handle. \\
+\hline
+{\em event} & The event to handle.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if no error has occured. 
+\end{DoxyReturn}
+
+
+Definition at line 92 of file ei\-\_\-widget\-\_\-frame.\-c.
+
+\hypertarget{ei__widget__frame_8h_aad1aa6cbab19cc599e1fbff591a60072}{\index{ei\-\_\-widget\-\_\-frame.\-h@{ei\-\_\-widget\-\_\-frame.\-h}!frame\-\_\-releasefunc@{frame\-\_\-releasefunc}}
+\index{frame\-\_\-releasefunc@{frame\-\_\-releasefunc}!ei_widget_frame.h@{ei\-\_\-widget\-\_\-frame.\-h}}
+\subsubsection[{frame\-\_\-releasefunc}]{\setlength{\rightskip}{0pt plus 5cm}void frame\-\_\-releasefunc (
+\begin{DoxyParamCaption}
+\item[{struct {\bf ei\-\_\-widget\-\_\-t} $\ast$}]{widget}
+\end{DoxyParamCaption}
+)}}\label{ei__widget__frame_8h_aad1aa6cbab19cc599e1fbff591a60072}
+
+
+Releases the memory. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em widget} & The widget to release. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 14 of file ei\-\_\-widget\-\_\-frame.\-c.
+
+\hypertarget{ei__widget__frame_8h_ac21be8c3879589e0e655ca2c4c834995}{\index{ei\-\_\-widget\-\_\-frame.\-h@{ei\-\_\-widget\-\_\-frame.\-h}!frame\-\_\-setdefaultsfunc@{frame\-\_\-setdefaultsfunc}}
+\index{frame\-\_\-setdefaultsfunc@{frame\-\_\-setdefaultsfunc}!ei_widget_frame.h@{ei\-\_\-widget\-\_\-frame.\-h}}
+\subsubsection[{frame\-\_\-setdefaultsfunc}]{\setlength{\rightskip}{0pt plus 5cm}void frame\-\_\-setdefaultsfunc (
+\begin{DoxyParamCaption}
+\item[{struct {\bf ei\-\_\-widget\-\_\-t} $\ast$}]{widget}
+\end{DoxyParamCaption}
+)}}\label{ei__widget__frame_8h_ac21be8c3879589e0e655ca2c4c834995}
+
+
+Sets the default values of a frame. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em widget} & The widget to initialize. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 77 of file ei\-\_\-widget\-\_\-frame.\-c.
+

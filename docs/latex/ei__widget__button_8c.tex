@@ -1,0 +1,159 @@
+\hypertarget{ei__widget__button_8c}{\section{ei\-\_\-widget\-\_\-button.\-c File Reference}
+\label{ei__widget__button_8c}\index{ei\-\_\-widget\-\_\-button.\-c@{ei\-\_\-widget\-\_\-button.\-c}}
+}
+{\ttfamily \#include \char`\"{}ei\-\_\-widget\-\_\-button.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}ei\-\_\-draw\-\_\-shape.\-h\char`\"{}}\\*
+{\ttfamily \#include $<$stdlib.\-h$>$}\\*
+{\ttfamily \#include \char`\"{}ei\-\_\-application.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}ei\-\_\-utils.\-h\char`\"{}}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void $\ast$ \hyperlink{ei__widget__button_8c_a0cbe9e7959a171e2a55c57bcdddddd49}{button\-\_\-allocfunc} ()
+\begin{DoxyCompactList}\small\item\em Memory allocation function. \end{DoxyCompactList}\item 
+void \hyperlink{ei__widget__button_8c_a017455a92ce9fa000cd44548ccf45f89}{button\-\_\-releasefunc} (struct \hyperlink{structei__widget__t}{ei\-\_\-widget\-\_\-t} $\ast$widget)
+\begin{DoxyCompactList}\small\item\em Releases the memory. \end{DoxyCompactList}\item 
+void \hyperlink{ei__widget__button_8c_a793446dc173bc5fbe5e15b34e77d9a33}{button\-\_\-drawfunc} (\hyperlink{structei__widget__t}{ei\-\_\-widget\-\_\-t} $\ast$widget, \hyperlink{hw__interface_8h_ad9970ae727c438faaf09c58c5defb796}{ei\-\_\-surface\-\_\-t} surface, \hyperlink{hw__interface_8h_ad9970ae727c438faaf09c58c5defb796}{ei\-\_\-surface\-\_\-t} \hyperlink{ei__application_8c_a356ef193ea6e596167a1c1f7dd712a48}{pick\-\_\-surface}, \hyperlink{structei__rect__t}{ei\-\_\-rect\-\_\-t} $\ast$clipper)
+\begin{DoxyCompactList}\small\item\em Draws a button on a given surface. \end{DoxyCompactList}\item 
+void \hyperlink{ei__widget__button_8c_a9fc68c07f6660c83e29d540b31e5cfb2}{button\-\_\-setdefaultsfunc} (struct \hyperlink{structei__widget__t}{ei\-\_\-widget\-\_\-t} $\ast$widget)
+\begin{DoxyCompactList}\small\item\em Initializes a button with default parameters. \end{DoxyCompactList}\item 
+void \hyperlink{ei__widget__button_8c_afb8e8359f217d519ae22939cfb92486e}{button\-\_\-geomnotifyfunc} (struct \hyperlink{structei__widget__t}{ei\-\_\-widget\-\_\-t} $\ast$widget, \hyperlink{structei__rect__t}{ei\-\_\-rect\-\_\-t} rect)
+\begin{DoxyCompactList}\small\item\em Invalidates the old and new widget. \end{DoxyCompactList}\item 
+\hyperlink{ei__types_8h_a383b9af13bd6a0a893096ead3c4d8e28}{ei\-\_\-bool\-\_\-t} \hyperlink{ei__widget__button_8c_a7ef3b8cc2fa6576580a1e12f3d08f17d}{button\-\_\-handlefunc} (struct \hyperlink{structei__widget__t}{ei\-\_\-widget\-\_\-t} $\ast$widget, struct \hyperlink{structei__event__t}{ei\-\_\-event\-\_\-t} $\ast$event)
+\begin{DoxyCompactList}\small\item\em Defines the behavior of a button. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{ei__widget__button_8c_a0cbe9e7959a171e2a55c57bcdddddd49}{\index{ei\-\_\-widget\-\_\-button.\-c@{ei\-\_\-widget\-\_\-button.\-c}!button\-\_\-allocfunc@{button\-\_\-allocfunc}}
+\index{button\-\_\-allocfunc@{button\-\_\-allocfunc}!ei_widget_button.c@{ei\-\_\-widget\-\_\-button.\-c}}
+\subsubsection[{button\-\_\-allocfunc}]{\setlength{\rightskip}{0pt plus 5cm}void$\ast$ button\-\_\-allocfunc (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{ei__widget__button_8c_a0cbe9e7959a171e2a55c57bcdddddd49}
+
+
+Memory allocation function. 
+
+
+
+Definition at line 10 of file ei\-\_\-widget\-\_\-button.\-c.
+
+\hypertarget{ei__widget__button_8c_a793446dc173bc5fbe5e15b34e77d9a33}{\index{ei\-\_\-widget\-\_\-button.\-c@{ei\-\_\-widget\-\_\-button.\-c}!button\-\_\-drawfunc@{button\-\_\-drawfunc}}
+\index{button\-\_\-drawfunc@{button\-\_\-drawfunc}!ei_widget_button.c@{ei\-\_\-widget\-\_\-button.\-c}}
+\subsubsection[{button\-\_\-drawfunc}]{\setlength{\rightskip}{0pt plus 5cm}void button\-\_\-drawfunc (
+\begin{DoxyParamCaption}
+\item[{{\bf ei\-\_\-widget\-\_\-t} $\ast$}]{widget, }
+\item[{{\bf ei\-\_\-surface\-\_\-t}}]{surface, }
+\item[{{\bf ei\-\_\-surface\-\_\-t}}]{pick\-\_\-surface, }
+\item[{{\bf ei\-\_\-rect\-\_\-t} $\ast$}]{clipper}
+\end{DoxyParamCaption}
+)}}\label{ei__widget__button_8c_a793446dc173bc5fbe5e15b34e77d9a33}
+
+
+Draws a button on a given surface. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em widget} & Pointer on the button to draw. \\
+\hline
+{\em surface} & The surface on which to draw the button. \\
+\hline
+{\em pick\-\_\-surface} & The picking surface. \\
+\hline
+{\em clipper} & A pointer on the clipping rectangle. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 25 of file ei\-\_\-widget\-\_\-button.\-c.
+
+\hypertarget{ei__widget__button_8c_afb8e8359f217d519ae22939cfb92486e}{\index{ei\-\_\-widget\-\_\-button.\-c@{ei\-\_\-widget\-\_\-button.\-c}!button\-\_\-geomnotifyfunc@{button\-\_\-geomnotifyfunc}}
+\index{button\-\_\-geomnotifyfunc@{button\-\_\-geomnotifyfunc}!ei_widget_button.c@{ei\-\_\-widget\-\_\-button.\-c}}
+\subsubsection[{button\-\_\-geomnotifyfunc}]{\setlength{\rightskip}{0pt plus 5cm}void button\-\_\-geomnotifyfunc (
+\begin{DoxyParamCaption}
+\item[{struct {\bf ei\-\_\-widget\-\_\-t} $\ast$}]{widget, }
+\item[{{\bf ei\-\_\-rect\-\_\-t}}]{rect}
+\end{DoxyParamCaption}
+)}}\label{ei__widget__button_8c_afb8e8359f217d519ae22939cfb92486e}
+
+
+Invalidates the old and new widget. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em widget} & The old widget. \\
+\hline
+{\em rect} & The new widget. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 110 of file ei\-\_\-widget\-\_\-button.\-c.
+
+\hypertarget{ei__widget__button_8c_a7ef3b8cc2fa6576580a1e12f3d08f17d}{\index{ei\-\_\-widget\-\_\-button.\-c@{ei\-\_\-widget\-\_\-button.\-c}!button\-\_\-handlefunc@{button\-\_\-handlefunc}}
+\index{button\-\_\-handlefunc@{button\-\_\-handlefunc}!ei_widget_button.c@{ei\-\_\-widget\-\_\-button.\-c}}
+\subsubsection[{button\-\_\-handlefunc}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ei\-\_\-bool\-\_\-t} button\-\_\-handlefunc (
+\begin{DoxyParamCaption}
+\item[{struct {\bf ei\-\_\-widget\-\_\-t} $\ast$}]{widget, }
+\item[{struct {\bf ei\-\_\-event\-\_\-t} $\ast$}]{event}
+\end{DoxyParamCaption}
+)}}\label{ei__widget__button_8c_a7ef3b8cc2fa6576580a1e12f3d08f17d}
+
+
+Defines the behavior of a button. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em widget} & The button to handle. \\
+\hline
+{\em event} & The event to handle.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if no error has occured. 
+\end{DoxyReturn}
+
+
+Definition at line 118 of file ei\-\_\-widget\-\_\-button.\-c.
+
+\hypertarget{ei__widget__button_8c_a017455a92ce9fa000cd44548ccf45f89}{\index{ei\-\_\-widget\-\_\-button.\-c@{ei\-\_\-widget\-\_\-button.\-c}!button\-\_\-releasefunc@{button\-\_\-releasefunc}}
+\index{button\-\_\-releasefunc@{button\-\_\-releasefunc}!ei_widget_button.c@{ei\-\_\-widget\-\_\-button.\-c}}
+\subsubsection[{button\-\_\-releasefunc}]{\setlength{\rightskip}{0pt plus 5cm}void button\-\_\-releasefunc (
+\begin{DoxyParamCaption}
+\item[{struct {\bf ei\-\_\-widget\-\_\-t} $\ast$}]{widget}
+\end{DoxyParamCaption}
+)}}\label{ei__widget__button_8c_a017455a92ce9fa000cd44548ccf45f89}
+
+
+Releases the memory. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em widget} & The widget to release. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 15 of file ei\-\_\-widget\-\_\-button.\-c.
+
+\hypertarget{ei__widget__button_8c_a9fc68c07f6660c83e29d540b31e5cfb2}{\index{ei\-\_\-widget\-\_\-button.\-c@{ei\-\_\-widget\-\_\-button.\-c}!button\-\_\-setdefaultsfunc@{button\-\_\-setdefaultsfunc}}
+\index{button\-\_\-setdefaultsfunc@{button\-\_\-setdefaultsfunc}!ei_widget_button.c@{ei\-\_\-widget\-\_\-button.\-c}}
+\subsubsection[{button\-\_\-setdefaultsfunc}]{\setlength{\rightskip}{0pt plus 5cm}void button\-\_\-setdefaultsfunc (
+\begin{DoxyParamCaption}
+\item[{struct {\bf ei\-\_\-widget\-\_\-t} $\ast$}]{widget}
+\end{DoxyParamCaption}
+)}}\label{ei__widget__button_8c_a9fc68c07f6660c83e29d540b31e5cfb2}
+
+
+Initializes a button with default parameters. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em widget} & The widget to initialize. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 94 of file ei\-\_\-widget\-\_\-button.\-c.
+

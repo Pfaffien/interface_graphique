@@ -1,0 +1,122 @@
+\hypertarget{ei__widget__radiobutton_8c}{\section{ei\-\_\-widget\-\_\-radiobutton.\-c File Reference}
+\label{ei__widget__radiobutton_8c}\index{ei\-\_\-widget\-\_\-radiobutton.\-c@{ei\-\_\-widget\-\_\-radiobutton.\-c}}
+}
+{\ttfamily \#include $<$stdlib.\-h$>$}\\*
+{\ttfamily \#include \char`\"{}ei\-\_\-widget\-\_\-radiobutton.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}ei\-\_\-draw\-\_\-shape.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}ei\-\_\-application.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}ei\-\_\-utils.\-h\char`\"{}}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void $\ast$ \hyperlink{ei__widget__radiobutton_8c_a06405cab5b5cc8131705878a273e5457}{radiobutton\-\_\-alloc\-\_\-func} ()
+\item 
+void \hyperlink{ei__widget__radiobutton_8c_ae63e20f9c7e35e599e008d4345be671d}{radiobutton\-\_\-releasefunc} (struct \hyperlink{structei__widget__t}{ei\-\_\-widget\-\_\-t} $\ast$widget)
+\item 
+int \hyperlink{ei__widget__radiobutton_8c_a1bb5003d267bf14fb5c64d0fac1c429c}{children} (ei\-\_\-widget\-\_\-radiobutton\-\_\-group\-\_\-t group)
+\item 
+void \hyperlink{ei__widget__radiobutton_8c_a7ede597d0137f32a50f1475d7a790547}{unselect} (struct ei\-\_\-widget\-\_\-radiobutton\-\_\-group\-\_\-t group)
+\item 
+void \hyperlink{ei__widget__radiobutton_8c_a5f66f637b0a644936d165bcb804b9a3c}{radiobutton\-\_\-drawfunc} (\hyperlink{structei__widget__t}{ei\-\_\-widget\-\_\-t} $\ast$widget, \hyperlink{hw__interface_8h_ad9970ae727c438faaf09c58c5defb796}{ei\-\_\-surface\-\_\-t} surface, \hyperlink{hw__interface_8h_ad9970ae727c438faaf09c58c5defb796}{ei\-\_\-surface\-\_\-t} \hyperlink{ei__application_8c_a356ef193ea6e596167a1c1f7dd712a48}{pick\-\_\-surface}, \hyperlink{structei__rect__t}{ei\-\_\-rect\-\_\-t} $\ast$clipper)
+\item 
+void \hyperlink{ei__widget__radiobutton_8c_a3d0edee70918e16030e865be22293cdf}{radiobutton\-\_\-group\-\_\-setdefaultsfunc} (struct \hyperlink{structei__widget__t}{ei\-\_\-widget\-\_\-t} $\ast$widget)
+\item 
+void \hyperlink{ei__widget__radiobutton_8c_af6fa1d74f646ff743698f5eca0060ec8}{radiobutton\-\_\-setdefaultsfunc} (struct \hyperlink{structei__widget__t}{ei\-\_\-widget\-\_\-t} $\ast$widget)
+\item 
+\hyperlink{ei__types_8h_a383b9af13bd6a0a893096ead3c4d8e28}{ei\-\_\-bool\-\_\-t} \hyperlink{ei__widget__radiobutton_8c_a9f2bbacf203c73810cdf9da43a8f1938}{radiobutton\-\_\-handlefunc} (struct \hyperlink{structei__widget__t}{ei\-\_\-widget\-\_\-t} $\ast$widget, struct \hyperlink{structei__event__t}{ei\-\_\-event\-\_\-t} $\ast$event)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{ei__widget__radiobutton_8c_a1bb5003d267bf14fb5c64d0fac1c429c}{\index{ei\-\_\-widget\-\_\-radiobutton.\-c@{ei\-\_\-widget\-\_\-radiobutton.\-c}!children@{children}}
+\index{children@{children}!ei_widget_radiobutton.c@{ei\-\_\-widget\-\_\-radiobutton.\-c}}
+\subsubsection[{children}]{\setlength{\rightskip}{0pt plus 5cm}int children (
+\begin{DoxyParamCaption}
+\item[{ei\-\_\-widget\-\_\-radiobutton\-\_\-group\-\_\-t}]{group}
+\end{DoxyParamCaption}
+)}}\label{ei__widget__radiobutton_8c_a1bb5003d267bf14fb5c64d0fac1c429c}
+
+
+Definition at line 19 of file ei\-\_\-widget\-\_\-radiobutton.\-c.
+
+\hypertarget{ei__widget__radiobutton_8c_a06405cab5b5cc8131705878a273e5457}{\index{ei\-\_\-widget\-\_\-radiobutton.\-c@{ei\-\_\-widget\-\_\-radiobutton.\-c}!radiobutton\-\_\-alloc\-\_\-func@{radiobutton\-\_\-alloc\-\_\-func}}
+\index{radiobutton\-\_\-alloc\-\_\-func@{radiobutton\-\_\-alloc\-\_\-func}!ei_widget_radiobutton.c@{ei\-\_\-widget\-\_\-radiobutton.\-c}}
+\subsubsection[{radiobutton\-\_\-alloc\-\_\-func}]{\setlength{\rightskip}{0pt plus 5cm}void$\ast$ radiobutton\-\_\-alloc\-\_\-func (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{ei__widget__radiobutton_8c_a06405cab5b5cc8131705878a273e5457}
+
+
+Definition at line 8 of file ei\-\_\-widget\-\_\-radiobutton.\-c.
+
+\hypertarget{ei__widget__radiobutton_8c_a5f66f637b0a644936d165bcb804b9a3c}{\index{ei\-\_\-widget\-\_\-radiobutton.\-c@{ei\-\_\-widget\-\_\-radiobutton.\-c}!radiobutton\-\_\-drawfunc@{radiobutton\-\_\-drawfunc}}
+\index{radiobutton\-\_\-drawfunc@{radiobutton\-\_\-drawfunc}!ei_widget_radiobutton.c@{ei\-\_\-widget\-\_\-radiobutton.\-c}}
+\subsubsection[{radiobutton\-\_\-drawfunc}]{\setlength{\rightskip}{0pt plus 5cm}void radiobutton\-\_\-drawfunc (
+\begin{DoxyParamCaption}
+\item[{{\bf ei\-\_\-widget\-\_\-t} $\ast$}]{widget, }
+\item[{{\bf ei\-\_\-surface\-\_\-t}}]{surface, }
+\item[{{\bf ei\-\_\-surface\-\_\-t}}]{pick\-\_\-surface, }
+\item[{{\bf ei\-\_\-rect\-\_\-t} $\ast$}]{clipper}
+\end{DoxyParamCaption}
+)}}\label{ei__widget__radiobutton_8c_a5f66f637b0a644936d165bcb804b9a3c}
+
+
+Definition at line 46 of file ei\-\_\-widget\-\_\-radiobutton.\-c.
+
+\hypertarget{ei__widget__radiobutton_8c_a3d0edee70918e16030e865be22293cdf}{\index{ei\-\_\-widget\-\_\-radiobutton.\-c@{ei\-\_\-widget\-\_\-radiobutton.\-c}!radiobutton\-\_\-group\-\_\-setdefaultsfunc@{radiobutton\-\_\-group\-\_\-setdefaultsfunc}}
+\index{radiobutton\-\_\-group\-\_\-setdefaultsfunc@{radiobutton\-\_\-group\-\_\-setdefaultsfunc}!ei_widget_radiobutton.c@{ei\-\_\-widget\-\_\-radiobutton.\-c}}
+\subsubsection[{radiobutton\-\_\-group\-\_\-setdefaultsfunc}]{\setlength{\rightskip}{0pt plus 5cm}void radiobutton\-\_\-group\-\_\-setdefaultsfunc (
+\begin{DoxyParamCaption}
+\item[{struct {\bf ei\-\_\-widget\-\_\-t} $\ast$}]{widget}
+\end{DoxyParamCaption}
+)}}\label{ei__widget__radiobutton_8c_a3d0edee70918e16030e865be22293cdf}
+
+
+Definition at line 58 of file ei\-\_\-widget\-\_\-radiobutton.\-c.
+
+\hypertarget{ei__widget__radiobutton_8c_a9f2bbacf203c73810cdf9da43a8f1938}{\index{ei\-\_\-widget\-\_\-radiobutton.\-c@{ei\-\_\-widget\-\_\-radiobutton.\-c}!radiobutton\-\_\-handlefunc@{radiobutton\-\_\-handlefunc}}
+\index{radiobutton\-\_\-handlefunc@{radiobutton\-\_\-handlefunc}!ei_widget_radiobutton.c@{ei\-\_\-widget\-\_\-radiobutton.\-c}}
+\subsubsection[{radiobutton\-\_\-handlefunc}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ei\-\_\-bool\-\_\-t} radiobutton\-\_\-handlefunc (
+\begin{DoxyParamCaption}
+\item[{struct {\bf ei\-\_\-widget\-\_\-t} $\ast$}]{widget, }
+\item[{struct {\bf ei\-\_\-event\-\_\-t} $\ast$}]{event}
+\end{DoxyParamCaption}
+)}}\label{ei__widget__radiobutton_8c_a9f2bbacf203c73810cdf9da43a8f1938}
+
+
+Definition at line 89 of file ei\-\_\-widget\-\_\-radiobutton.\-c.
+
+\hypertarget{ei__widget__radiobutton_8c_ae63e20f9c7e35e599e008d4345be671d}{\index{ei\-\_\-widget\-\_\-radiobutton.\-c@{ei\-\_\-widget\-\_\-radiobutton.\-c}!radiobutton\-\_\-releasefunc@{radiobutton\-\_\-releasefunc}}
+\index{radiobutton\-\_\-releasefunc@{radiobutton\-\_\-releasefunc}!ei_widget_radiobutton.c@{ei\-\_\-widget\-\_\-radiobutton.\-c}}
+\subsubsection[{radiobutton\-\_\-releasefunc}]{\setlength{\rightskip}{0pt plus 5cm}void radiobutton\-\_\-releasefunc (
+\begin{DoxyParamCaption}
+\item[{struct {\bf ei\-\_\-widget\-\_\-t} $\ast$}]{widget}
+\end{DoxyParamCaption}
+)}}\label{ei__widget__radiobutton_8c_ae63e20f9c7e35e599e008d4345be671d}
+
+
+Definition at line 13 of file ei\-\_\-widget\-\_\-radiobutton.\-c.
+
+\hypertarget{ei__widget__radiobutton_8c_af6fa1d74f646ff743698f5eca0060ec8}{\index{ei\-\_\-widget\-\_\-radiobutton.\-c@{ei\-\_\-widget\-\_\-radiobutton.\-c}!radiobutton\-\_\-setdefaultsfunc@{radiobutton\-\_\-setdefaultsfunc}}
+\index{radiobutton\-\_\-setdefaultsfunc@{radiobutton\-\_\-setdefaultsfunc}!ei_widget_radiobutton.c@{ei\-\_\-widget\-\_\-radiobutton.\-c}}
+\subsubsection[{radiobutton\-\_\-setdefaultsfunc}]{\setlength{\rightskip}{0pt plus 5cm}void radiobutton\-\_\-setdefaultsfunc (
+\begin{DoxyParamCaption}
+\item[{struct {\bf ei\-\_\-widget\-\_\-t} $\ast$}]{widget}
+\end{DoxyParamCaption}
+)}}\label{ei__widget__radiobutton_8c_af6fa1d74f646ff743698f5eca0060ec8}
+
+
+Definition at line 71 of file ei\-\_\-widget\-\_\-radiobutton.\-c.
+
+\hypertarget{ei__widget__radiobutton_8c_a7ede597d0137f32a50f1475d7a790547}{\index{ei\-\_\-widget\-\_\-radiobutton.\-c@{ei\-\_\-widget\-\_\-radiobutton.\-c}!unselect@{unselect}}
+\index{unselect@{unselect}!ei_widget_radiobutton.c@{ei\-\_\-widget\-\_\-radiobutton.\-c}}
+\subsubsection[{unselect}]{\setlength{\rightskip}{0pt plus 5cm}void unselect (
+\begin{DoxyParamCaption}
+\item[{struct ei\-\_\-widget\-\_\-radiobutton\-\_\-group\-\_\-t}]{group}
+\end{DoxyParamCaption}
+)}}\label{ei__widget__radiobutton_8c_a7ede597d0137f32a50f1475d7a790547}
+
+
+Definition at line 30 of file ei\-\_\-widget\-\_\-radiobutton.\-c.
+

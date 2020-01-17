@@ -1,0 +1,176 @@
+\hypertarget{ei__widget__toplevel_8h}{\section{ei\-\_\-widget\-\_\-toplevel.\-h File Reference}
+\label{ei__widget__toplevel_8h}\index{ei\-\_\-widget\-\_\-toplevel.\-h@{ei\-\_\-widget\-\_\-toplevel.\-h}}
+}
+{\ttfamily \#include \char`\"{}ei\-\_\-widget.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}ei\-\_\-event.\-h\char`\"{}}\\*
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structei__widget__toplevel__t}{ei\-\_\-widget\-\_\-toplevel\-\_\-t}
+\begin{DoxyCompactList}\small\item\em Structure of a toplevel widget. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{structei__widget__toplevel__t}{ei\-\_\-widget\-\_\-toplevel\-\_\-t} \hyperlink{ei__widget__toplevel_8h_a53ca6f548ac950f5104969c72e4ce6b5}{ei\-\_\-widget\-\_\-toplevel\-\_\-t}
+\begin{DoxyCompactList}\small\item\em Structure of a toplevel widget. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void $\ast$ \hyperlink{ei__widget__toplevel_8h_aaee887b7ce2a7ee1033bb722ee84f646}{toplevel\-\_\-allocfunc} ()
+\begin{DoxyCompactList}\small\item\em Memory allocation function. \end{DoxyCompactList}\item 
+void \hyperlink{ei__widget__toplevel_8h_a913d4e207a0cb55d064ab0f1e0978ca0}{toplevel\-\_\-releasefunc} (struct \hyperlink{structei__widget__t}{ei\-\_\-widget\-\_\-t} $\ast$widget)
+\begin{DoxyCompactList}\small\item\em Releases the memory. \end{DoxyCompactList}\item 
+void \hyperlink{ei__widget__toplevel_8h_aaa2c5c44d520eed78a726241f2611f96}{toplevel\-\_\-drawfunc} (\hyperlink{structei__widget__t}{ei\-\_\-widget\-\_\-t} $\ast$widget, \hyperlink{hw__interface_8h_ad9970ae727c438faaf09c58c5defb796}{ei\-\_\-surface\-\_\-t} surface, \hyperlink{hw__interface_8h_ad9970ae727c438faaf09c58c5defb796}{ei\-\_\-surface\-\_\-t} \hyperlink{ei__application_8c_a356ef193ea6e596167a1c1f7dd712a48}{pick\-\_\-surface}, \hyperlink{structei__rect__t}{ei\-\_\-rect\-\_\-t} $\ast$clipper)
+\begin{DoxyCompactList}\small\item\em Draws a toplevel. \end{DoxyCompactList}\item 
+void \hyperlink{ei__widget__toplevel_8h_ab0f51b6a3a49d44aa637eb164173cbae}{toplevel\-\_\-setdefaultsfunc} (struct \hyperlink{structei__widget__t}{ei\-\_\-widget\-\_\-t} $\ast$widget)
+\begin{DoxyCompactList}\small\item\em Sets the default parameters of a toplevel. \end{DoxyCompactList}\item 
+void \hyperlink{ei__widget__toplevel_8h_abf57b97db914479643a25158f58119cc}{toplevel\-\_\-geomnotifyfunc} (struct \hyperlink{structei__widget__t}{ei\-\_\-widget\-\_\-t} $\ast$widget, \hyperlink{structei__rect__t}{ei\-\_\-rect\-\_\-t} rect)
+\begin{DoxyCompactList}\small\item\em Defines the behavior of a button. \end{DoxyCompactList}\item 
+\hyperlink{ei__types_8h_a383b9af13bd6a0a893096ead3c4d8e28}{ei\-\_\-bool\-\_\-t} \hyperlink{ei__widget__toplevel_8h_a4ae69d77ca5a782217f3a11e8ab21dac}{toplevel\-\_\-handlefunc} (struct \hyperlink{structei__widget__t}{ei\-\_\-widget\-\_\-t} $\ast$widget, struct \hyperlink{structei__event__t}{ei\-\_\-event\-\_\-t} $\ast$event)
+\begin{DoxyCompactList}\small\item\em Defines how to handle a toplevel. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{ei__widget__toplevel_8h_a53ca6f548ac950f5104969c72e4ce6b5}{\index{ei\-\_\-widget\-\_\-toplevel.\-h@{ei\-\_\-widget\-\_\-toplevel.\-h}!ei\-\_\-widget\-\_\-toplevel\-\_\-t@{ei\-\_\-widget\-\_\-toplevel\-\_\-t}}
+\index{ei\-\_\-widget\-\_\-toplevel\-\_\-t@{ei\-\_\-widget\-\_\-toplevel\-\_\-t}!ei_widget_toplevel.h@{ei\-\_\-widget\-\_\-toplevel.\-h}}
+\subsubsection[{ei\-\_\-widget\-\_\-toplevel\-\_\-t}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf ei\-\_\-widget\-\_\-toplevel\-\_\-t}  {\bf ei\-\_\-widget\-\_\-toplevel\-\_\-t}}}\label{ei__widget__toplevel_8h_a53ca6f548ac950f5104969c72e4ce6b5}
+
+
+Structure of a toplevel widget. 
+
+
+
+\subsection{Function Documentation}
+\hypertarget{ei__widget__toplevel_8h_aaee887b7ce2a7ee1033bb722ee84f646}{\index{ei\-\_\-widget\-\_\-toplevel.\-h@{ei\-\_\-widget\-\_\-toplevel.\-h}!toplevel\-\_\-allocfunc@{toplevel\-\_\-allocfunc}}
+\index{toplevel\-\_\-allocfunc@{toplevel\-\_\-allocfunc}!ei_widget_toplevel.h@{ei\-\_\-widget\-\_\-toplevel.\-h}}
+\subsubsection[{toplevel\-\_\-allocfunc}]{\setlength{\rightskip}{0pt plus 5cm}void$\ast$ toplevel\-\_\-allocfunc (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{ei__widget__toplevel_8h_aaee887b7ce2a7ee1033bb722ee84f646}
+
+
+Memory allocation function. 
+
+
+
+Definition at line 12 of file ei\-\_\-widget\-\_\-toplevel.\-c.
+
+\hypertarget{ei__widget__toplevel_8h_aaa2c5c44d520eed78a726241f2611f96}{\index{ei\-\_\-widget\-\_\-toplevel.\-h@{ei\-\_\-widget\-\_\-toplevel.\-h}!toplevel\-\_\-drawfunc@{toplevel\-\_\-drawfunc}}
+\index{toplevel\-\_\-drawfunc@{toplevel\-\_\-drawfunc}!ei_widget_toplevel.h@{ei\-\_\-widget\-\_\-toplevel.\-h}}
+\subsubsection[{toplevel\-\_\-drawfunc}]{\setlength{\rightskip}{0pt plus 5cm}void toplevel\-\_\-drawfunc (
+\begin{DoxyParamCaption}
+\item[{{\bf ei\-\_\-widget\-\_\-t} $\ast$}]{widget, }
+\item[{{\bf ei\-\_\-surface\-\_\-t}}]{surface, }
+\item[{{\bf ei\-\_\-surface\-\_\-t}}]{pick\-\_\-surface, }
+\item[{{\bf ei\-\_\-rect\-\_\-t} $\ast$}]{clipper}
+\end{DoxyParamCaption}
+)}}\label{ei__widget__toplevel_8h_aaa2c5c44d520eed78a726241f2611f96}
+
+
+Draws a toplevel. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em widget} & The widget to draw. \\
+\hline
+{\em surface} & The surface on which to draw the toplevel. \\
+\hline
+{\em pick\-\_\-surface} & The picking surface. \\
+\hline
+{\em clipper} & A pointer on the clipping rectangle. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 28 of file ei\-\_\-widget\-\_\-toplevel.\-c.
+
+\hypertarget{ei__widget__toplevel_8h_abf57b97db914479643a25158f58119cc}{\index{ei\-\_\-widget\-\_\-toplevel.\-h@{ei\-\_\-widget\-\_\-toplevel.\-h}!toplevel\-\_\-geomnotifyfunc@{toplevel\-\_\-geomnotifyfunc}}
+\index{toplevel\-\_\-geomnotifyfunc@{toplevel\-\_\-geomnotifyfunc}!ei_widget_toplevel.h@{ei\-\_\-widget\-\_\-toplevel.\-h}}
+\subsubsection[{toplevel\-\_\-geomnotifyfunc}]{\setlength{\rightskip}{0pt plus 5cm}void toplevel\-\_\-geomnotifyfunc (
+\begin{DoxyParamCaption}
+\item[{struct {\bf ei\-\_\-widget\-\_\-t} $\ast$}]{widget, }
+\item[{{\bf ei\-\_\-rect\-\_\-t}}]{rect}
+\end{DoxyParamCaption}
+)}}\label{ei__widget__toplevel_8h_abf57b97db914479643a25158f58119cc}
+
+
+Defines the behavior of a button. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em widget} & The button to handle. \\
+\hline
+{\em event} & The event to handle.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if no error has occured. 
+\end{DoxyReturn}
+
+
+Definition at line 98 of file ei\-\_\-widget\-\_\-toplevel.\-c.
+
+\hypertarget{ei__widget__toplevel_8h_a4ae69d77ca5a782217f3a11e8ab21dac}{\index{ei\-\_\-widget\-\_\-toplevel.\-h@{ei\-\_\-widget\-\_\-toplevel.\-h}!toplevel\-\_\-handlefunc@{toplevel\-\_\-handlefunc}}
+\index{toplevel\-\_\-handlefunc@{toplevel\-\_\-handlefunc}!ei_widget_toplevel.h@{ei\-\_\-widget\-\_\-toplevel.\-h}}
+\subsubsection[{toplevel\-\_\-handlefunc}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ei\-\_\-bool\-\_\-t} toplevel\-\_\-handlefunc (
+\begin{DoxyParamCaption}
+\item[{struct {\bf ei\-\_\-widget\-\_\-t} $\ast$}]{widget, }
+\item[{struct {\bf ei\-\_\-event\-\_\-t} $\ast$}]{event}
+\end{DoxyParamCaption}
+)}}\label{ei__widget__toplevel_8h_a4ae69d77ca5a782217f3a11e8ab21dac}
+
+
+Defines how to handle a toplevel. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em widget} & The toplevel to handle. \\
+\hline
+{\em event} & The event to handle. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 109 of file ei\-\_\-widget\-\_\-toplevel.\-c.
+
+\hypertarget{ei__widget__toplevel_8h_a913d4e207a0cb55d064ab0f1e0978ca0}{\index{ei\-\_\-widget\-\_\-toplevel.\-h@{ei\-\_\-widget\-\_\-toplevel.\-h}!toplevel\-\_\-releasefunc@{toplevel\-\_\-releasefunc}}
+\index{toplevel\-\_\-releasefunc@{toplevel\-\_\-releasefunc}!ei_widget_toplevel.h@{ei\-\_\-widget\-\_\-toplevel.\-h}}
+\subsubsection[{toplevel\-\_\-releasefunc}]{\setlength{\rightskip}{0pt plus 5cm}void toplevel\-\_\-releasefunc (
+\begin{DoxyParamCaption}
+\item[{struct {\bf ei\-\_\-widget\-\_\-t} $\ast$}]{widget}
+\end{DoxyParamCaption}
+)}}\label{ei__widget__toplevel_8h_a913d4e207a0cb55d064ab0f1e0978ca0}
+
+
+Releases the memory. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em widget} & The widget to release. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 17 of file ei\-\_\-widget\-\_\-toplevel.\-c.
+
+\hypertarget{ei__widget__toplevel_8h_ab0f51b6a3a49d44aa637eb164173cbae}{\index{ei\-\_\-widget\-\_\-toplevel.\-h@{ei\-\_\-widget\-\_\-toplevel.\-h}!toplevel\-\_\-setdefaultsfunc@{toplevel\-\_\-setdefaultsfunc}}
+\index{toplevel\-\_\-setdefaultsfunc@{toplevel\-\_\-setdefaultsfunc}!ei_widget_toplevel.h@{ei\-\_\-widget\-\_\-toplevel.\-h}}
+\subsubsection[{toplevel\-\_\-setdefaultsfunc}]{\setlength{\rightskip}{0pt plus 5cm}void toplevel\-\_\-setdefaultsfunc (
+\begin{DoxyParamCaption}
+\item[{struct {\bf ei\-\_\-widget\-\_\-t} $\ast$}]{widget}
+\end{DoxyParamCaption}
+)}}\label{ei__widget__toplevel_8h_ab0f51b6a3a49d44aa637eb164173cbae}
+
+
+Sets the default parameters of a toplevel. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em widget} & The toplevel to initialize. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 82 of file ei\-\_\-widget\-\_\-toplevel.\-c.
+

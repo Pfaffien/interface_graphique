@@ -1,0 +1,160 @@
+\hypertarget{ei__widget__entry_8c}{\section{ei\-\_\-widget\-\_\-entry.\-c File Reference}
+\label{ei__widget__entry_8c}\index{ei\-\_\-widget\-\_\-entry.\-c@{ei\-\_\-widget\-\_\-entry.\-c}}
+}
+{\ttfamily \#include \char`\"{}ei\-\_\-widget\-\_\-entry.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}ei\-\_\-draw\-\_\-shape.\-h\char`\"{}}\\*
+{\ttfamily \#include $<$stdlib.\-h$>$}\\*
+{\ttfamily \#include $<$string.\-h$>$}\\*
+{\ttfamily \#include \char`\"{}ei\-\_\-application.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}ei\-\_\-utils.\-h\char`\"{}}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void $\ast$ \hyperlink{ei__widget__entry_8c_a6548b17f5a958d7215fd895d4cfd89e4}{entry\-\_\-allocfunc} ()
+\begin{DoxyCompactList}\small\item\em Memory allocation function. \end{DoxyCompactList}\item 
+void \hyperlink{ei__widget__entry_8c_a874e38a0a6dea3f8f3b0762f7205e21a}{entry\-\_\-releasefunc} (struct \hyperlink{structei__widget__t}{ei\-\_\-widget\-\_\-t} $\ast$widget)
+\begin{DoxyCompactList}\small\item\em Releases the memory. \end{DoxyCompactList}\item 
+void \hyperlink{ei__widget__entry_8c_a821b44cbb39734a00685e95c8733a518}{entry\-\_\-drawfunc} (\hyperlink{structei__widget__t}{ei\-\_\-widget\-\_\-t} $\ast$widget, \hyperlink{hw__interface_8h_ad9970ae727c438faaf09c58c5defb796}{ei\-\_\-surface\-\_\-t} surface, \hyperlink{hw__interface_8h_ad9970ae727c438faaf09c58c5defb796}{ei\-\_\-surface\-\_\-t} \hyperlink{ei__application_8c_a356ef193ea6e596167a1c1f7dd712a48}{pick\-\_\-surface}, \hyperlink{structei__rect__t}{ei\-\_\-rect\-\_\-t} $\ast$clipper)
+\begin{DoxyCompactList}\small\item\em Draws an entry. \end{DoxyCompactList}\item 
+void \hyperlink{ei__widget__entry_8c_ad25465d7f71eb05f4e1921503c648d54}{entry\-\_\-setdefaultsfunc} (struct \hyperlink{structei__widget__t}{ei\-\_\-widget\-\_\-t} $\ast$widget)
+\begin{DoxyCompactList}\small\item\em Initializes the parameters of an entry. \end{DoxyCompactList}\item 
+void \hyperlink{ei__widget__entry_8c_a0760e11a03e2a5efbb7f1aae83c285d6}{entry\-\_\-geomnotifyfunc} (struct \hyperlink{structei__widget__t}{ei\-\_\-widget\-\_\-t} $\ast$widget, \hyperlink{structei__rect__t}{ei\-\_\-rect\-\_\-t} rect)
+\begin{DoxyCompactList}\small\item\em Invalidates the old and new widget. \end{DoxyCompactList}\item 
+\hyperlink{ei__types_8h_a383b9af13bd6a0a893096ead3c4d8e28}{ei\-\_\-bool\-\_\-t} \hyperlink{ei__widget__entry_8c_a709d4a8338be66c674cc490906196a2f}{entry\-\_\-handlefunc} (struct \hyperlink{structei__widget__t}{ei\-\_\-widget\-\_\-t} $\ast$widget, struct \hyperlink{structei__event__t}{ei\-\_\-event\-\_\-t} $\ast$event)
+\begin{DoxyCompactList}\small\item\em Defines how to handle an entry. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{ei__widget__entry_8c_a6548b17f5a958d7215fd895d4cfd89e4}{\index{ei\-\_\-widget\-\_\-entry.\-c@{ei\-\_\-widget\-\_\-entry.\-c}!entry\-\_\-allocfunc@{entry\-\_\-allocfunc}}
+\index{entry\-\_\-allocfunc@{entry\-\_\-allocfunc}!ei_widget_entry.c@{ei\-\_\-widget\-\_\-entry.\-c}}
+\subsubsection[{entry\-\_\-allocfunc}]{\setlength{\rightskip}{0pt plus 5cm}void$\ast$ entry\-\_\-allocfunc (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{ei__widget__entry_8c_a6548b17f5a958d7215fd895d4cfd89e4}
+
+
+Memory allocation function. 
+
+
+
+Definition at line 11 of file ei\-\_\-widget\-\_\-entry.\-c.
+
+\hypertarget{ei__widget__entry_8c_a821b44cbb39734a00685e95c8733a518}{\index{ei\-\_\-widget\-\_\-entry.\-c@{ei\-\_\-widget\-\_\-entry.\-c}!entry\-\_\-drawfunc@{entry\-\_\-drawfunc}}
+\index{entry\-\_\-drawfunc@{entry\-\_\-drawfunc}!ei_widget_entry.c@{ei\-\_\-widget\-\_\-entry.\-c}}
+\subsubsection[{entry\-\_\-drawfunc}]{\setlength{\rightskip}{0pt plus 5cm}void entry\-\_\-drawfunc (
+\begin{DoxyParamCaption}
+\item[{{\bf ei\-\_\-widget\-\_\-t} $\ast$}]{widget, }
+\item[{{\bf ei\-\_\-surface\-\_\-t}}]{surface, }
+\item[{{\bf ei\-\_\-surface\-\_\-t}}]{pick\-\_\-surface, }
+\item[{{\bf ei\-\_\-rect\-\_\-t} $\ast$}]{clipper}
+\end{DoxyParamCaption}
+)}}\label{ei__widget__entry_8c_a821b44cbb39734a00685e95c8733a518}
+
+
+Draws an entry. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em widget} & The widget to draw. \\
+\hline
+{\em surface} & The surface on which to draw the entry. \\
+\hline
+{\em pick\-\_\-surface} & The picking surface. \\
+\hline
+{\em clipper} & A pointer on the clipping rectangle. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 26 of file ei\-\_\-widget\-\_\-entry.\-c.
+
+\hypertarget{ei__widget__entry_8c_a0760e11a03e2a5efbb7f1aae83c285d6}{\index{ei\-\_\-widget\-\_\-entry.\-c@{ei\-\_\-widget\-\_\-entry.\-c}!entry\-\_\-geomnotifyfunc@{entry\-\_\-geomnotifyfunc}}
+\index{entry\-\_\-geomnotifyfunc@{entry\-\_\-geomnotifyfunc}!ei_widget_entry.c@{ei\-\_\-widget\-\_\-entry.\-c}}
+\subsubsection[{entry\-\_\-geomnotifyfunc}]{\setlength{\rightskip}{0pt plus 5cm}void entry\-\_\-geomnotifyfunc (
+\begin{DoxyParamCaption}
+\item[{struct {\bf ei\-\_\-widget\-\_\-t} $\ast$}]{widget, }
+\item[{{\bf ei\-\_\-rect\-\_\-t}}]{rect}
+\end{DoxyParamCaption}
+)}}\label{ei__widget__entry_8c_a0760e11a03e2a5efbb7f1aae83c285d6}
+
+
+Invalidates the old and new widget. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em widget} & The old widget. \\
+\hline
+{\em rect} & The new widget. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 83 of file ei\-\_\-widget\-\_\-entry.\-c.
+
+\hypertarget{ei__widget__entry_8c_a709d4a8338be66c674cc490906196a2f}{\index{ei\-\_\-widget\-\_\-entry.\-c@{ei\-\_\-widget\-\_\-entry.\-c}!entry\-\_\-handlefunc@{entry\-\_\-handlefunc}}
+\index{entry\-\_\-handlefunc@{entry\-\_\-handlefunc}!ei_widget_entry.c@{ei\-\_\-widget\-\_\-entry.\-c}}
+\subsubsection[{entry\-\_\-handlefunc}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ei\-\_\-bool\-\_\-t} entry\-\_\-handlefunc (
+\begin{DoxyParamCaption}
+\item[{struct {\bf ei\-\_\-widget\-\_\-t} $\ast$}]{widget, }
+\item[{struct {\bf ei\-\_\-event\-\_\-t} $\ast$}]{event}
+\end{DoxyParamCaption}
+)}}\label{ei__widget__entry_8c_a709d4a8338be66c674cc490906196a2f}
+
+
+Defines how to handle an entry. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em widget} & The widget to handle. \\
+\hline
+{\em event} & The event to handle.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+False if the entry is not selected, else True. 
+\end{DoxyReturn}
+
+
+Definition at line 91 of file ei\-\_\-widget\-\_\-entry.\-c.
+
+\hypertarget{ei__widget__entry_8c_a874e38a0a6dea3f8f3b0762f7205e21a}{\index{ei\-\_\-widget\-\_\-entry.\-c@{ei\-\_\-widget\-\_\-entry.\-c}!entry\-\_\-releasefunc@{entry\-\_\-releasefunc}}
+\index{entry\-\_\-releasefunc@{entry\-\_\-releasefunc}!ei_widget_entry.c@{ei\-\_\-widget\-\_\-entry.\-c}}
+\subsubsection[{entry\-\_\-releasefunc}]{\setlength{\rightskip}{0pt plus 5cm}void entry\-\_\-releasefunc (
+\begin{DoxyParamCaption}
+\item[{struct {\bf ei\-\_\-widget\-\_\-t} $\ast$}]{widget}
+\end{DoxyParamCaption}
+)}}\label{ei__widget__entry_8c_a874e38a0a6dea3f8f3b0762f7205e21a}
+
+
+Releases the memory. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em widget} & The widget to release. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 16 of file ei\-\_\-widget\-\_\-entry.\-c.
+
+\hypertarget{ei__widget__entry_8c_ad25465d7f71eb05f4e1921503c648d54}{\index{ei\-\_\-widget\-\_\-entry.\-c@{ei\-\_\-widget\-\_\-entry.\-c}!entry\-\_\-setdefaultsfunc@{entry\-\_\-setdefaultsfunc}}
+\index{entry\-\_\-setdefaultsfunc@{entry\-\_\-setdefaultsfunc}!ei_widget_entry.c@{ei\-\_\-widget\-\_\-entry.\-c}}
+\subsubsection[{entry\-\_\-setdefaultsfunc}]{\setlength{\rightskip}{0pt plus 5cm}void entry\-\_\-setdefaultsfunc (
+\begin{DoxyParamCaption}
+\item[{struct {\bf ei\-\_\-widget\-\_\-t} $\ast$}]{widget}
+\end{DoxyParamCaption}
+)}}\label{ei__widget__entry_8c_ad25465d7f71eb05f4e1921503c648d54}
+
+
+Initializes the parameters of an entry. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em widget} & The widget to initialize. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 70 of file ei\-\_\-widget\-\_\-entry.\-c.
+
